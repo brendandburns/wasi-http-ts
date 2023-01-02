@@ -1,0 +1,27 @@
+{
+  "name": "@brendandburns/wasi-http-ts",
+  "main": "index.ts",
+  "ascMain": "index.ts",
+  "types": "index.ts",
+  "version": "0.11.0",
+  "description": "Experimental HTTP library for AssemblyScript",
+  "author": {
+    "name": "Brendan Burns and the DeisLabs team at Microsoft"
+  },
+  "homepage": "https://github.com/brendandburns/wasi-http-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendandburns/wasi-http-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/brendandburns/wasi-http-ts/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "asbuild": "asc index.ts -b build/optimized.wasm --use abort=wasi_abort --debug"
+  },
+  "dependencies": {
+    "as-wasi": "0.5.1",
+    "assemblyscript": "^0.25.2"
+  }
+}
